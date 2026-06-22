@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio pessoal de Raul Santos, engenheiro de software." />
+  <title>Raul Santos | Portfólio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Cabeçalho fixo com menu de navegação principal -->
+  <header class="header">
+    <nav class="navbar container" aria-label="Menu principal">
+      <a href="#inicio" class="brand" aria-label="Ir para o início">
+        <span class="brand-logo">RS</span>
+        <span class="brand-text">
+          <strong>Raul Santos</strong>
+          <small>Engenheiro de software</small>
+        </span>
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#formacao">Formação</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <button class="theme-button" id="themeButton" type="button" aria-label="Alternar tema">
+        🌙
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção inicial / apresentação -->
+    <section id="inicio" class="hero section">
+      <div class="container hero-content">
+        <p class="status"><span></span> disponível para novos projetos</p>
+        <h1>Raul <em>Santos</em></h1>
+        <p class="hero-description">
+          Engenheiro de software com foco em APIs, integração de sistemas,
+          performance e construção de soluções web organizadas, escaláveis e de fácil manutenção.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#portfolio">Ver projetos</a>
+          <a class="button button-secondary" href="#contato">Entrar em contato</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção obrigatória: Sobre mim -->
+    <section id="sobre" class="section section-muted">
+      <div class="container two-columns">
+        <div>
+          <span class="section-number">01.</span>
+          <h2>Sobre mim</h2>
+          <p>
+            Sou Raul Santos, engenheiro de software com foco em desenvolvimento backend. Tenho experiência na criação de APIs REST, integração entre sistemas, modelagem de bancos de dados relacionais e desenvolvimento de aplicações escaláveis utilizando Node.js e TypeScript.
+          </p>
+          <p>
+            Busco desenvolver soluções bem estruturadas, priorizando legibilidade, manutenção e boas práticas de engenharia de software. Atualmente, venho aprofundando meus conhecimentos em arquitetura de software, performance, escalabilidade, Docker, Kubernetes e computação em nuvem.
+          </p>
+          <p>
+           Acredito na evolução contínua por meio do aprendizado constante e gosto de participar de projetos que resolvam problemas reais, gerando valor para usuários e empresas.
+          </p>
+        </div>
+
+        <div class="stats-grid" aria-label="Resumo profissional">
+          <article class="card stat-card">
+            <strong>4+</strong>
+            <span>anos de experiência</span>
+          </article>
+          <article class="card stat-card">
+            <strong>20+</strong>
+            <span>projetos e laboratórios</span>
+          </article>
+          <article class="card stat-card wide">
+            <strong>Backend</strong>
+            <span>Node.js, APIs, SQL, Docker e integrações</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção obrigatória: Formação -->
+    <section id="formacao" class="section">
+      <div class="container">
+        <span class="section-number">02.</span>
+        <h2>Formação</h2>
+        <p class="section-intro">
+          Minha formação combina base técnica, prática profissional e estudos contínuos em desenvolvimento web.
+        </p>
+
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Formação acadêmica</h3>
+            <p>
+              Cursando graduação na área de tecnologia, com foco em fortalecer a base teórica
+              e complementar a experiência prática no desenvolvimento de software.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Formação técnica</h3>
+            <p>
+              Formação técnica pela ETEC em Redes de Computadores e Desenvolvimento de Sistemas,
+              construindo base em programação, infraestrutura e lógica computacional.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Idiomas</h3>
+            <p>
+              Português nativo. Inglês técnico para leitura de documentação, ferramentas,
+              bibliotecas e conteúdos de desenvolvimento.
+            </p>
+          </article>
+        </div>
+
+        <div class="skills-box">
+          <h3>Tecnologias e ferramentas</h3>
+          <div class="tags">
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>Node.js</span>
+            <span>NestJS</span>
+            <span>PostgreSQL</span>
+            <span>TypeORM</span>
+            <span>Docker</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>AWS</span>
+            <span>Kubernetes</span>
+            <span>N8N</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção obrigatória: Portfólio -->
+    <section id="portfolio" class="section section-muted">
+      <div class="container">
+        <span class="section-number">03.</span>
+        <h2>Portfólio</h2>
+        <p class="section-intro">
+          Alguns projetos e experiências que representam minha atuação como desenvolvedor.
+        </p>
+
+        <div class="projects-grid">
+          <article class="card project-card">
+            <div class="project-top">
+              <span class="project-index">01</span>
+              <span class="project-icon">⚙️</span>
+            </div>
+            <h3>Order Service</h3>
+            <p>
+              API de estudos criada com Node.js, Express e TypeScript, explorando organização
+              em camadas, regras de domínio, testes e boas práticas para APIs REST.
+            </p>
+            <div class="tags">
+              <span>Node.js</span>
+              <span>TypeScript</span>
+              <span>Express</span>
+              <span>Testes</span>
+            </div>
+            <a href="https://github.com/Raul26-tech" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-top">
+              <span class="project-index">02</span>
+              <span class="project-icon">☁️</span>
+            </div>
+            <h3>App Faltô</h3>
+            <p>
+              Projeto com backend, frontend e infraestrutura em cloud, envolvendo deploy,
+              banco de dados, containers e publicação de aplicação web.
+            </p>
+            <div class="tags">
+              <span>NestJS</span>
+              <span>PostgreSQL</span>
+              <span>Docker</span>
+              <span>AWS</span>
+            </div>
+            <a href="https://github.com/rauletec2020" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-top">
+              <span class="project-index">03</span>
+              <span class="project-icon">🔗</span>
+            </div>
+            <h3>Integrações e Automações</h3>
+            <p>
+              Experiências com integrações entre sistemas, automações, APIs externas,
+              manipulação de dados e comunicação entre serviços.
+            </p>
+            <div class="tags">
+              <span>APIs</span>
+              <span>Odoo</span>
+              <span>n8n</span>
+              <span>Integrações</span>
+            </div>
+            <a href="https://github.com/rauletec2020" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção obrigatória: Contato com formulário validado via JavaScript -->
+    <section id="contato" class="section">
+      <div class="container contact-container">
+        <div>
+          <span class="section-number">04.</span>
+          <h2>Contato</h2>
+          <p>
+            Entre em contato para conversar sobre oportunidades, projetos, tecnologia ou colaboração.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:rauletec2020@gmail.com">rauletec2020@gmail.com</a>
+            <a href="https://www.linkedin.com/in/raul-santos-802824275/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/rauletec2020" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <form class="card contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" />
+            <small class="error-message" id="nameError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@dominio.com" />
+            <small class="error-message" id="emailError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem"></textarea>
+            <small class="error-message" id="messageError"></small>
+          </div>
+
+          <button class="button button-primary full" type="submit">Enviar mensagem</button>
+          <p class="success-message" id="successMessage" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="currentYear"></span> Raul Santos. Todos os direitos reservados.</p>
+      <a href="#inicio">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
